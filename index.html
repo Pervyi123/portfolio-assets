@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+
+<html lang="uk">
+<head>
+<meta charset="utf-8"/>
+<title>Yurii Yurchyk · Portfolio v2.6</title>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<style>
+  :root{--ink:#222;--muted:#333;--accent:#0b5fa5;--bg:#f9f9f9;--hdr:#eceff1;}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font:400 11pt/1.45 system-ui,-apple-system,"Segoe UI","DejaVu Sans",Arial,sans-serif}
+  .page{max-width:800px;margin:0 auto;padding:24mm 18mm}
+  header{background:var(--hdr);border-radius:16px;padding:18px;display:grid;grid-template-columns:72px 1fr;gap:14px;align-items:center}
+  h1{margin:0;font-weight:700;font-size:22pt;text-align:center}
+  .role{text-align:center;color:#5f7481;margin-top:6px}
+  .contacts{text-align:center;color:#1f2937;margin-top:6px}
+  .section{margin-top:16px}
+  .section h2{color:var(--accent);font-size:13pt;margin:0 0 8px 0}
+  p{margin:0 0 8px 0;color:var(--muted)}
+  b.sub{color:var(--accent)}
+  .kv{margin:0 0 6px 0}
+  .proj{padding:12px 14px;border-radius:12px;background:#fff;box-shadow:0 0 0 1px #e9eef5}
+  .proj + .proj{margin-top:10px}
+  .proj h3{margin:0 0 6px 0;color:var(--accent);font-size:12.5pt}
+  .stack,.result{color:#374151;font-size:10.5pt}
+  pre{white-space:pre-wrap;background:#f5f7fb;border:1px solid #e8edf6;border-radius:10px;padding:10px;margin:8px 0;color:#111;font-family:ui-monospace,"SFMono-Regular","DejaVu Sans Mono",monospace;font-size:10pt;line-height:1.35}
+  .avatar{width:72px;height:72px;border-radius:50%;object-fit:cover}
+  footer{margin-top:18px;text-align:center;color:#8b8b8b;font-size:9pt}
+  @media print{
+    body{background:#fff}
+    .page{padding:18mm}
+    header,.proj,.section{break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+<header>
+<img alt="Avatar" class="avatar" src="https://raw.githubusercontent.com/Pervyi123/portfolio-assets/77654eeeb1932e8e9b01295f2482c7fefc94d94f/dev_icon%D1%96_v24.png"/>
+<div>
+<h1>Юрій Юрчик / Yurii Yurchyk</h1>
+<div class="role">Web &amp; Automation Developer</div>
+<div class="contacts">yryrchik@gmail.com • 0960806301 • @Pervyi1234 •
+      <a href="https://www.linkedin.com/in/%D1%8E%D1%80%D1%96%D0%B9-%D1%8E%D1%80%D1%87%D0%B8%D0%BA-a011631b4/">LinkedIn</a> • Ukraine — Remote</div>
+</div>
+</header>
+<section class="section">
+<h2>Про мене / About me</h2>
+<p>Розробник веб-рішень та автоматизацій. Працюю з HTML, CSS, JavaScript; виконую технічні правки WordPress і DLE, створюю скрипти для Google Sheets та Telegram-боти з інтеграціями API. Орієнтуюсь на практичні результати, стабільність і прозорі процеси.</p>
+<p>Web &amp; automation developer. Proficient in HTML, CSS, JavaScript; experienced with WordPress/DLE customizations, Google Sheets scripts, and Telegram bots with API integrations. Focused on reliability, clarity, and measurable outcomes.</p>
+</section>
+<section class="section">
+<h2>Технічні навички / Technical Skills</h2>
+<p class="kv"><b class="sub">Core:</b> HTML, CSS, JavaScript</p>
+<p class="kv"><b class="sub">Also worked with (AI-assisted):</b> PHP (template edits, payment integrations), Google Apps Script, WordPress (Elementor, Yoast, Jet Plugins), DLE, Node.js (Telegram, Puppeteer)</p>
+<p class="kv"><b class="sub">APIs &amp; Integrations:</b> Telegram Bot API, Monobank API, Nova Poshta API, Ukrposhta API, Google Sheets API</p>
+<p class="kv"><b class="sub">Cloud / Deployment:</b> Google Cloud Run</p>
+<p class="kv"><b class="sub">Data Handling:</b> JSON, Google Sheets</p>
+</section>
+<section class="section">
+<h2>Проєкти / Projects</h2>
+
+<div class="proj"><h3>Multilingual WordPress (www.seoppcyakovenko.com.ua)</h3>
+<p><b>UA:</b> Встановив Google Language Translator і довів мультимовність до «продакшн-рівня» кастомними JS/CSS: керування мовою через cookie <code>googtrans</code>, акуратний UI перемикача (поточна мова в лейблі + приховування активної опції), нормалізація заголовків і breadcrumb (H1/H3) перед перекладом, контроль <code>notranslate</code> для елементів із ручною підміною текстів. Додав обробку динамічних ререндерів Elementor через <code>MutationObserver</code> та логіку для FAQ/accordion, щоб переклад коректно застосовувався під час відкриття контенту.</p>
+<p><b>EN:</b> Installed Google Language Translator and brought the multilingual setup to a production-ready level with custom JS/CSS: language control via the <code>googtrans</code> cookie, a clean switcher UI (current language label + hiding the active option), heading and breadcrumb (H1/H3) normalization before translation, and scoped <code>notranslate</code> rules for elements with manual text overrides. Added support for dynamic Elementor re-renders via <code>MutationObserver</code> and FAQ/accordion logic so translations apply correctly when content is expanded.</p>
+<p class="stack"><b>Stack:</b> WordPress (Elementor), Google Language Translator, JavaScript (jQuery), HTML/CSS</p>
+<p class="result"><b>Result:</b> Стабільна мультимовність із контрольованим перемикачем і коректною поведінкою динамічних блоків. / Stable multilingual UX with a controlled switcher and reliable behavior for dynamic blocks.</p>
+</div>
+
+<div class="proj"><h3>Client Support: Bot Optimization + Footer Restore (mobilemassage.com.ua)</h3>
+<p><b>UA:</b> Клієнт повернувся із запитом на підтримку: оптимізував Telegram-бота (зменшив зайві фонові цикли та повторні звернення, додав коректний режим очікування без активності), переніс деплой на інший Google-акаунт/Cloud Run. Окремо провів діагностику проблеми з футером сайту: виявив видалене фонове зображення, підготував та повторно завантажив асет, перевірив коректне відображення футера на сторінках.</p>
+<p><b>EN:</b> Returning client support: optimized the Telegram bot (reduced redundant background loops and repeated calls, added a proper idle/wait mode when there’s no activity) and migrated the deployment to another Google account / Cloud Run. Separately diagnosed a footer issue on the website: found that the background image asset was removed, rebuilt and re-uploaded it, and verified correct footer rendering across pages.</p>
+<p class="stack"><b>Stack:</b> Node.js, Telegraf, Google Cloud Run, WordPress (Elementor), HTML/CSS</p>
+<p class="result"><b>Result:</b> Менше витрат ресурсів і стабільна робота бота + відновлений футер без редизайну. / Lower resource usage and stable bot operation + footer restored without redesign.</p>
+</div>
+
+<div class="proj"><h3>Stick&amp;Color — дитячі розмальовки (stickandcolor.com)</h3>
+<p><b>UA: </b>Інтернет-магазин цифрових розмальовок та наліпок. Переробив структуру сайту, оптимізував категорії та картки товарів, створив окремі лендинги під тематичні набори, налаштував базовий SEO та впровадив повноцінну двомовну версію (UA/EN). Реалізував скрипт, який відстежує натискання кнопки «Оплатити», зчитує поточний вміст кошика на сайті й за допомогою Gumroad API автоматично формує відповідний кошик у Gumroad.</p>
+<p><b>EN: </b>Online store of digital coloring books and stickers. Reworked the site structure, optimized product categories and product cards, created dedicated landing pages for themed bundles, implemented basic on-page SEO, and set up a smooth bilingual UA/EN experience. Developed a script that listens to the “Pay” button, reads the current cart contents on the site and, via the Gumroad API, automatically builds a mirrored cart in Gumroad.</p>
+<p class="stack"><b>Stack: </b>WordPress (Astra, WooCommerce, Elementor), HTML/CSS, JavaScript, Gumroad API</p>
+<p class="result"><b>Result: </b>Масштабована структура каталогу цифрових продуктів із двомовністю та автоматизованим кошиком Gumroad. / Scalable digital-products catalog with bilingual support and automated Gumroad cart synchronization.</p>
+</div>
+
+<div class="proj"><h3>SEO + WordPress Optimization (mobilemassage.com.ua)</h3>
+<p><b>UA:</b> Технічний SEO (Yoast, sitemap, robots.txt, canonical, hreflang, GSC). Додано соцмережі, правки дизайну та меню.</p>
+<p><b>EN:</b> Technical SEO (Yoast, sitemap, robots.txt, canonical, hreflang, GSC). Social links added, design &amp; menu tweaks.</p>
+<p class="stack"><b>Stack:</b> WordPress, Yoast SEO, Polylang, HTML/CSS</p>
+<p class="result"><b>Result:</b> Покращено індексацію та технічну структуру. / Improved indexing and technical structure.</p>
+</div>
+
+<div class="proj"><h3>Telegram Massage Bot</h3>
+<p><b>UA:</b> Telegram-бот для сервісу мобільного масажу. Три ролі (клієнт, майстер, адміністратор), оплата Monobank API, автоматичні повідомлення, логіка бронювання.</p>
+<p><b>EN:</b> Telegram bot for a mobile massage service. 3 user roles (client, master, admin), Monobank API payments, automated notifications, booking logic.</p>
+<p class="stack"><b>Stack:</b> Node.js, Telegraf, Monobank API, Google Cloud Run</p>
+<p class="result"><b>Result:</b> Автоматизовано прийом замовлень та оплату. / Automated order and payment workflow.</p>
+</div>
+
+<div class="proj"><h3>Steam Cosmetics Parser</h3>
+<p><b>UA:</b> Багатоджерельний парсер (Steam Market, Buff.163, DotaWiki, SteamInventory) з експортом у JSON і Google Sheets.</p>
+<p><b>EN:</b> Multi-source parser (Steam Market, Buff.163, DotaWiki, SteamInventory) exporting to JSON and Google Sheets.</p>
+<p class="stack"><b>Stack:</b> Node.js, Puppeteer, Google Sheets API</p>
+<p class="result"><b>Result:</b> Автоматизований збір і аналіз цін. / Automated multi-source price analysis.</p>
+</div>
+
+<div class="proj"><h3>Deck-Building.us</h3>
+<p><b>UA:</b> Статичний сайт з нуля: верстка, логіка, базове SEO (без конструкторів).</p>
+<p><b>EN:</b> Hand-coded static site: layout, JS logic, basic SEO (no builders).</p>
+<p class="stack"><b>Stack:</b> HTML, CSS, JavaScript</p>
+<p class="result"><b>Result:</b> Повноцінний сайт з нуля. / Fully functional static site from scratch.</p>
+</div>
+
+<div class="proj"><h3>WayForPay Integration (fond.behappyua.com)</h3>
+<p><b>UA: </b>Налагоджено інтеграцію WayForPay, виправлено логіку платежів, QR, а також виконано технічні роботи з сайтом: оптимізація шаблону, виправлення помилок, оновлення структури сторінок.</p>
+<p><b>EN: </b>Implemented WayForPay integration, fixed payment logic and QR processing, plus performed technical site improvements: template optimization, bug fixes, page structure updates.</p>
+<p class="stack"><b>Stack:</b> PHP (AI-assisted), WordPress, WayForPay API</p>
+<p class="result"><b>Result:</b> Стабільні та коректні платежі. / Stable and correct payment processing.</p>
+</div>
+
+<div class="proj"><h3>Google Sheets Pricing Calculator</h3>
+<p><b>UA:</b> Apps Script автоматизує розрахунки: onEdit, логування, копіювання блоків, форматування, підсумки.</p>
+<p><b>EN:</b> Apps Script automation: onEdit handlers, logging, copying blocks, formatting, summaries.</p>
+<p class="stack"><b>Stack:</b> Google Apps Script (JavaScript)</p>
+<p class="result"><b>Result:</b> Повністю автоматизована калькуляція. / Fully automated price calculations.</p>
+</div>
+
+<div class="proj"><h3>DLE Site (news.kh.ua)</h3>
+<p><b>UA:</b> Правки шаблонів: кольори, меню, рейтинг, соцкнопки, SEO-теги.</p>
+<p><b>EN:</b> Template edits: color scheme, menu, rating, social buttons, SEO tags.</p>
+<p class="stack"><b>Stack:</b> DLE (PHP), JavaScript, HTML/CSS</p>
+<p class="result"><b>Result:</b> Оновлений вигляд і функціонал. / Updated design and extended functionality.</p>
+</div>
+
+<div class="proj"><h3>Radio-Centre: Broken Links Cleanup (radio-centre.com)</h3>
+<p><b>UA:</b> Виправлення «битих» посилань на сайті: аудит 404, пошук причин (структура URL/старі матеріали), підбір коректних цільових сторінок, оновлення посилань та налаштування редіректів для відновлення навігації.</p>
+<p><b>EN:</b> Broken links cleanup: audited 404s, identified root causes (URL structure/legacy content), mapped correct target pages, updated links and configured redirects to restore navigation.</p>
+<p class="stack"><b>Stack:</b> Joomla, HTML/CSS, Redirects / SEO basics</p>
+<p class="result"><b>Result:</b> Зменшено кількість 404 і відновлено користувацькі переходи. / Reduced 404 errors and restored user navigation.</p>
+</div>
+
+<div class="proj"><h3>Ad Popups (dieg.info)</h3>
+<p><b>UA:</b> Динамічні попапи з умовами показу.</p>
+<p><b>EN:</b> Dynamic JS pop-ups with conditional triggers.</p>
+<p class="stack"><b>Stack:</b> JavaScript</p>
+<p class="result"><b>Result:</b> Гнучкі рекламні сценарії. / Flexible promotional triggers.</p>
+</div>
+
+<div class="proj"><h3>Google Sheets Shipments Tracker</h3>
+<p><b>UA:</b> Автоматизація відстеження посилок (Нова Пошта/Укрпошта) у Google Sheets для співробітників.</p>
+<p><b>EN:</b> Shipments tracking automation (Nova Poshta/Ukrposhta) in Google Sheets for staff.</p>
+<p class="stack"><b>Stack:</b> Google Apps Script, APIs (Nova Poshta, Ukrposhta)</p>
+<p class="result"><b>Result:</b> Мінус ручні перевірки статусів. / Eliminated manual status checks.</p>
+</div>
+</section>
+
+<section class="section">
+<h2>Приклади коду / Code Examples</h2>
+
+<p><b class="sub">WordPress Multilingual UX — Google Language Translator (JS excerpt)</b></p>
+<pre>/* custom.js — фрагмент реальної логіки мультимовності (скорочено) */
+(function initLanguageMenus() {
+  // Зчитуємо поточну мову з cookie googtrans (fallback: uk)
+  function getCookieLang() {
+    const m = document.cookie.match(/(?:^|;\s*)googtrans=([^;]+)/);
+    if (!m) return 'uk';
+    const parts = decodeURIComponent(m[1]).split('/');
+    return parts[parts.length - 1] || 'uk';
+  }
+
+  // Записуємо cookie у кількох варіантах (plain/encoded + domain), щоб GT стабільно підхоплював мову
+  function setGoogTransCookie(lang) {
+    const plain = '/uk/' + lang;
+    const enc = encodeURIComponent(plain);
+
+    function writeCookie(val, domain) {
+      let s = 'googtrans=' + val + '; path=/; SameSite=Lax';
+      if (domain) s += '; domain=' + domain;
+      document.cookie = s;
+    }
+
+    writeCookie(plain);
+    writeCookie(enc);
+
+    const host = location.hostname;
+    if (host && host.indexOf('.') !== -1) {
+      writeCookie(plain, host);
+      writeCookie(enc, host);
+      writeCookie(plain, '.' + host);
+      writeCookie(enc, '.' + host);
+    }
+  }
+
+  // Старт перекладу (GT)
+  function forceTranslate(lang) {
+    setGoogTransCookie(lang);
+    if (window.doGTranslate) return window.doGTranslate('uk|' + lang);
+
+    const sel = document.querySelector('.goog-te-combo');
+    if (sel) { sel.value = lang; sel.dispatchEvent(new Event('change')); }
+  }
+
+  // Клік по пункту мови → ставимо cookie → запускаємо GT → оновлюємо наші правки
+  document.addEventListener('click', (e) =&gt; {
+    const a = e.target.closest &amp;&amp; e.target.closest('a.single-language');
+    if (!a) return;
+
+    e.preventDefault();
+    const lang = a.classList.contains('en') ? 'en'
+               : a.classList.contains('de') ? 'de'
+               : a.classList.contains('ru') ? 'ru'
+               : 'uk';
+
+    forceTranslate(lang);
+
+    // Після перемикання — підміни текстів/обмеження notranslate/flatten breadcrumb тощо
+    window.__mlOnLangSwitch &amp;&amp; window.__mlOnLangSwitch();
+  });
+})();
+
+// Elementor може «перемальовувати» блоки — підхоплюємо ререндери і повторюємо наші правки
+(function mlObserveRerenders() {
+  const root = document.body;
+  if (!root || window.__mlNtObserver) return;
+
+  window.__mlNtObserver = new MutationObserver(() =&gt; {
+    clearTimeout(window.__mlNtObserverT);
+    window.__mlNtObserverT = setTimeout(() =&gt; {
+      window.__mlOnLangSwitch &amp;&amp; window.__mlOnLangSwitch();
+    }, 140);
+  });
+
+  window.__mlNtObserver.observe(root, { childList: true, subtree: true });
+})();
+</pre>
+
+<p><b class="sub">Google Sheets Automation (Apps Script)</b></p>
+<pre>// Copy selected rows to the summary sheet with formatting and totals
+function copyToSummarySheet(sheet, totalRow) {
+  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  const summary = ss.getSheetByName("Sheet4");
+  const start = 2;
+  const numRows = totalRow - 1;
+  const range = sheet.getRange(start, 1, numRows, 6);
+  range.copyTo(summary.getRange(summary.getLastRow() + 3, 1));
+  const lastRow = summary.getLastRow();
+  const table = summary.getRange(lastRow - numRows + 1, 1, numRows, 14);
+  table.setBorder(true, true, true, true, true, true);
+  summary.getRange(lastRow + 1, 14)
+         .setValue(`=SUM(N${lastRow - numRows + 1}:N${lastRow})`)
+         .setFontWeight("bold");
+}</pre>
+
+<p><b class="sub">Steam Market Scraper — pagination, UA rotation, 429 handling</b></p>
+<pre>ess(start) {
+  fs.writeFileSync(parserStateFile, JSON.stringify({ start }));
+  console.log(`✅ Прогрес збережено. Почнемо наступного разу з start=${start}`);
+}
+
+async function getAllMarketItems(onChunkSync) {
+  rotateUserAgent(); // Перший вибір User-Agent
+  const totalCountUrl = 'https://steamcommunity.com/market/search/render/?appid=570&amp;norender=1&amp;currency=1&amp;start=0&amp;count=1';
+  try {
+    const totalRes = await axios.get(totalCountUrl, {
+      headers: { 'User-Agent': currentUserAgent }
+    });
+    const total = totalRes.data.total_count || 0;
+    console.log(`🚀 Скрипт запущено. Всього айтемів на ринку: ${total}`);
+    fs.appendFileSync('parser_log.txt', `[${new Date().toISOString()}] Старт: ${total} айтемів на ринку\n`);
+  } catch (e) {
+    console.warn('⚠️ Не вдалося отримати загальну кількість айтемів.');
+  }
+
+  let start = 0;
+  const batchSize = 10;
+  const maxPerSession = pagesPerBlock * batchSize;
+  let processed = 0;
+  const masterItemsMap = new Map();
+  let emptyPageRetries = 0;
+
+  try {
+    if (!fs.existsSync(parserStateFile)) {
+      fs.writeFileSync(parserStateFile, JSON.stringify({ start: 0 }, null, 2));
+      console.log('🆕 parser-state.json не знайдено. Створено новий з start = 0.');
+    }
+
+    const state = JSON.parse(fs.readFileSync(parserStateFile, 'utf-8'));
+    start = state.start || 0;
+
+    currentStart = start;
+
+    while (true) {
+      console.log(`🔄 Парси</pre>
+
+<p><b class="sub">Price Monitor Job — watchlist + retry with UA rotate</b></p>
+<pre>ля ${market_hash_name}`);
+      return 'RETRY';
+    }
+    console.warn(`⚠️ Помилка запиту ціни для ${market_hash_name}: ${e.message}`);
+    return null;
+  }
+}
+
+async function processItem(item) {
+  let attempts = 0;
+  while (attempts &lt; 2) {
+    const price = await fetchPrice(item.market_hash_name);
+    if (price === 'RETRY') {
+      rotateUserAgent('бан');
+      console.log(`⏳ Пауза 60с через бан...`);
+      await sleep(60000);
+      attempts++;
+      continue;
+    }
+
+    if (price == null) return;
+
+    if (price !== item.price) {
+      console.log(`🔄 Зміна ціни: ${item.market_hash_name}: ${item.price} → ${price}`);
+      try {
+        await updateItemPriceInSheet(item.market_hash_name, price);
+      } catch (e) {
+        console.error(`❌ Помилка оновлення Google Sheets для ${item.market_hash_name}:`, e.message);
+      }
+      item.price = price;
+    } else {
+      console.log(`✅ Без змін: ${item.market_hash_name} — $${item.price}`);
+    }
+
+    break;
+  }
+}
+
+async function monitor() {
+  while (true) {
+    rotateUserAgent('початок циклу');
+    console.log(`⏱️ Старт моніторингу Steam Ma</pre>
+
+<p><b class="sub">Parsed Inventory — XML + Puppeteer fallback + backup</b></p>
+<pre>;
+
+const sleep = ms =&gt; new Promise(resolve =&gt; setTimeout(resolve, ms));
+const getRandomUA = () =&gt; USER_AGENTS[Math.floor(Math.random() * USER_AGENTS.length)];
+
+const getGroupMembers = async () =&gt; {
+  console.log('📥 Збір учасників групи...');
+  try {
+    const res = await axios.get(MEMBERS_XML_URL, {
+      headers: { 'User-Agent': getRandomUA() },
+      timeout: 10000
+    });
+
+    const result = await xml2js.parseStringPromise(res.data);
+    const fetchedIDs = result?.memberList?.members?.[0]?.steamID64 || [];
+
+    let existingIDs = [];
+    if (fs.existsSync(PLAYERS_FILE)) {
+      existingIDs = JSON.parse(fs.readFileSync(PLAYERS_FILE, 'utf8'));
+    }
+
+    const mergedIDs = [...new Set([...existingIDs, ...fetchedIDs])];
+
+    fs.writeFileSync(PLAYERS_FILE, JSON.stringify(mergedIDs, null, 2));
+    console.log(`🔍 Всього SteamID у списку: ${mergedIDs.length}`);
+    return mergedIDs;
+  } catch (err) {
+    console.error(`❌ Помилка отримання учасників: ${err.message}`);
+    return [];
+  }
+};
+
+const fetchWithPuppeteer = async steamId =&gt; {
+  try {
+    const browser = await puppeteer.launch({ headless: 'new' });
+    const page = await browser.newPage</pre>
+
+<p><b class="sub">Deck-Building.us — header &amp; navigation structure</b></p>
+<pre>&lt;header&gt;
+  &lt;div class="head_1"&gt;
+    &lt;button id="scrollToTop" aria-label="Scroll to top"
+            class="scroll-top-btn" style="display: none;"&gt;
+      &lt;span class="material-icons"&gt;arrow_upward&lt;/span&gt;
+    &lt;/button&gt;
+
+    &lt;div class="head_2"&gt;
+      &lt;div class="block_h1"&gt;
+        &lt;div class="block_1"&gt;
+          &lt;img src="img/logo.png"
+               alt="Cherry Home Construction company logo"
+               class="logo" loading="lazy"&gt;
+          &lt;a href="contact.html" class="but_1" aria-label="Get a Free Quote"&gt;
+            Get a Free Quote
+          &lt;/a&gt;
+          &lt;a href="tel:+17736338359" class="number"
+             aria-label="Call at +1 (773) 633-8359"&gt;
+            +1 (773) 633-8359
+          &lt;/a&gt;
+        &lt;/div&gt;
+
+        &lt;h1 class="main-heading"&gt;
+          Custom Deck Builders in Chicago, IL
+        &lt;/h1&gt;
+      &lt;/div&gt;
+
+      &lt;nav class="navigation"&gt;
+        &lt;button class="menu-toggle" id="menu-toggle"
+                aria-label="Open or close the menu"&gt;
+          ☰
+        &lt;/button&gt;
+
+        &lt;ul class="nav_1"&gt;
+          &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;
+            &lt;a href="index.html#about_us" class="abaut" data-scroll=""&gt;
+              About us
+            &lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;a href="services.html" class="btn"&gt;Services&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="gallery.html" class="btn"&gt;Gallery&lt;/a&gt;&lt;/li&gt;
+          &lt;!-- &lt;li&gt;&lt;a href="reviews.html" class="btn"&gt;Reviews&lt;/a&gt;&lt;/li&gt; --&gt;
+          &lt;li&gt;&lt;a href="contact.html" class="btn"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/nav&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
+
+&lt;script&gt;
+// Mobile menu toggle
+const menuToggle = document.getElementById('menu-toggle');
+const nav = document.querySelector('.nav_1');
+
+if (menuToggle &amp;&amp; nav) {
+  menuToggle.addEventListener('click', () =&gt; {
+    nav.classList.toggle('open');
+  });
+}
+&lt;/script&gt;
+</pre>
+</section>
+
+<footer>© Yurii Yurchyk · Web &amp; Automation Developer</footer>
+</div>
+</body>
+</html>
