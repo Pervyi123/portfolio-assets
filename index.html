@@ -253,42 +253,6 @@ function copyToSummarySheet(sheet, totalRow) {
          .setFontWeight("bold");
 }</pre>
 
-
-const sleep = ms =&gt; new Promise(resolve =&gt; setTimeout(resolve, ms));
-const getRandomUA = () =&gt; USER_AGENTS[Math.floor(Math.random() * USER_AGENTS.length)];
-
-const getGroupMembers = async () =&gt; {
-  console.log('📥 Збір учасників групи...');
-  try {
-    const res = await axios.get(MEMBERS_XML_URL, {
-      headers: { 'User-Agent': getRandomUA() },
-      timeout: 10000
-    });
-
-    const result = await xml2js.parseStringPromise(res.data);
-    const fetchedIDs = result?.memberList?.members?.[0]?.steamID64 || [];
-
-    let existingIDs = [];
-    if (fs.existsSync(PLAYERS_FILE)) {
-      existingIDs = JSON.parse(fs.readFileSync(PLAYERS_FILE, 'utf8'));
-    }
-
-    const mergedIDs = [...new Set([...existingIDs, ...fetchedIDs])];
-
-    fs.writeFileSync(PLAYERS_FILE, JSON.stringify(mergedIDs, null, 2));
-    console.log(`🔍 Всього SteamID у списку: ${mergedIDs.length}`);
-    return mergedIDs;
-  } catch (err) {
-    console.error(`❌ Помилка отримання учасників: ${err.message}`);
-    return [];
-  }
-};
-
-const fetchWithPuppeteer = async steamId =&gt; {
-  try {
-    const browser = await puppeteer.launch({ headless: 'new' });
-    const page = await browser.newPage</pre>
-
 <p><b class="sub">Deck-Building.us — header &amp; navigation structure</b></p>
 <pre>&lt;header&gt;
   &lt;div class="head_1"&gt;
