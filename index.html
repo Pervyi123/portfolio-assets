@@ -38,27 +38,37 @@
 <img alt="Avatar" class="avatar" src="https://raw.githubusercontent.com/Pervyi123/portfolio-assets/77654eeeb1932e8e9b01295f2482c7fefc94d94f/dev_icon%D1%96_v24.png"/>
 <div>
 <h1>Юрій Юрчик / Yurii Yurchyk</h1>
-<div class="role">Web &amp; Automation Developer</div>
+<div class="role">Junior JavaScript / Frontend / Web Automation Developer</div>
 <div class="contacts">yryrchik@gmail.com • 0960806301 • @Pervyi1234 •
       <a href="https://www.linkedin.com/in/%D1%8E%D1%80%D1%96%D0%B9-%D1%8E%D1%80%D1%87%D0%B8%D0%BA-a011631b4/">LinkedIn</a> • Ukraine — Remote</div>
 </div>
 </header>
 <section class="section">
 <h2>Про мене / About me</h2>
-<p>Розробник веб-рішень та автоматизацій. Працюю з HTML, CSS, JavaScript; виконую технічні правки WordPress і DLE, створюю скрипти для Google Sheets та Telegram-боти з інтеграціями API. Орієнтуюсь на практичні результати, стабільність і прозорі процеси.</p>
-<p>Web &amp; automation developer. Proficient in HTML, CSS, JavaScript; experienced with WordPress/DLE customizations, Google Sheets scripts, and Telegram bots with API integrations. Focused on reliability, clarity, and measurable outcomes.</p>
+<p>Junior JavaScript / Frontend / Web Automation Developer з практичним досвідом у веб-розробці, WordPress/Elementor, JavaScript-правках, автоматизації Google Sheets, роботі з API та клієнтськими задачами. Моя сильна сторона — поєднання технічного підходу, аналітики, уважності до деталей і розуміння бізнес-логіки.</p>
+<p>Самостійно розробив Telegram-бота для сервісу мобільного масажу та парсер даних. Частину складніших технічних рішень реалізовував із AI-підтримкою, але сам формував логіку задач, тестував сценарії, перевіряв помилки, налаштовував деплой і доводив проєкти до робочого стану.</p>
+<p>Зараз поглиблюю JavaScript і TypeScript, а React, Node.js та SQL планую системно розвивати під реальні задачі команди.</p>
 </section>
 <section class="section">
 <h2>Технічні навички / Technical Skills</h2>
-<p class="kv"><b class="sub">Core:</b> HTML, CSS, JavaScript</p>
-<p class="kv"><b class="sub">Also worked with (AI-assisted):</b> PHP (template edits, payment integrations), Google Apps Script, WordPress (Elementor, Yoast, Jet Plugins), DLE, Node.js (Telegram, Puppeteer)</p>
-<p class="kv"><b class="sub">APIs &amp; Integrations:</b> Telegram Bot API, Monobank API, Nova Poshta API, Ukrposhta API, Google Sheets API</p>
-<p class="kv"><b class="sub">Cloud / Deployment:</b> Google Cloud Run</p>
-<p class="kv"><b class="sub">Data Handling:</b> JSON, Google Sheets</p>
+<p class="kv"><b class="sub">Frontend:</b> HTML, CSS, JavaScript, DOM, jQuery, адаптивна верстка, базова робота з Canvas</p>
+<p class="kv"><b class="sub">Web / CMS:</b> WordPress, Elementor, WooCommerce, DLE; правки структури сторінок, шаблонів, меню, футерів, попапів і UI-елементів</p>
+<p class="kv"><b class="sub">Automation / Data:</b> Google Sheets, Google Apps Script, Excel, формули, звіти, обробка даних, автоматизація повторюваних процесів</p>
+<p class="kv"><b class="sub">APIs &amp; Integrations:</b> базова робота з REST API та JSON; Telegram Bot API, Monobank API, Gumroad API, Google Sheets API, Nova Poshta API, Ukrposhta API</p>
+<p class="kv"><b class="sub">Tools:</b> Git/GitHub, Chrome DevTools, VS Code, Google Cloud Run, базове читання логів і тестування сценаріїв</p>
+<p class="kv"><b class="sub">Learning now:</b> TypeScript. React, Node.js і SQL — наступні напрямки для системного поглиблення</p>
 </section>
-<section class="section">
 <h2>Проєкти / Projects</h2>
-
+  
+<div class="proj"><h3>Telegram Massage Bot</h3>
+<p><b>UA:</b> Самостійно розробив Telegram-бота з нуля для сервісу мобільного масажу. Реалізував логіку ролей клієнта, майстра й адміністратора, запис/бронювання, автоматичні повідомлення, базову адмін-логіку, оплату через Monobank API та деплой на Google Cloud Run.</p>
+<p><b>UA:</b> Частину складніших технічних рішень реалізовував із AI-підтримкою, але самостійно формував логіку задач, тестував сценарії, перевіряв помилки, працював із логами й доводив проєкт до робочого стану.</p>
+<p><b>EN:</b> Independently built a Telegram bot from scratch for a mobile massage service. The bot includes client, therapist and admin roles, booking logic, automated notifications, basic admin flow, Monobank API payment flow and deployment to Google Cloud Run.</p>
+<p><b>EN:</b> Some complex technical solutions were implemented with AI support, but I was responsible for task logic, testing user scenarios, checking errors, working with logs and bringing the project to a working result.</p>
+<p class="stack"><b>Stack:</b> JavaScript / Node.js environment, Telegraf, Telegram Bot API, Monobank API, Google Cloud Run</p>
+<p class="result"><b>Result:</b> Автоматизовано запис, повідомлення, ролі користувачів і оплату для сервісу. / Automated booking, notifications, user roles and payment flow for the service.</p>
+</div>
+  
 <div class="proj"><h3>Multilingual WordPress (www.seoppcyakovenko.com.ua)</h3>
 <p><b>UA:</b> Встановив Google Language Translator і довів мультимовність до «продакшн-рівня» кастомними JS/CSS: керування мовою через cookie <code>googtrans</code>, акуратний UI перемикача (поточна мова в лейблі + приховування активної опції), нормалізація заголовків і breadcrumb (H1/H3) перед перекладом, контроль <code>notranslate</code> для елементів із ручною підміною текстів. Додав обробку динамічних ререндерів Elementor через <code>MutationObserver</code> та логіку для FAQ/accordion, щоб переклад коректно застосовувався під час відкриття контенту.</p>
 <p><b>EN:</b> Installed Google Language Translator and brought the multilingual setup to a production-ready level with custom JS/CSS: language control via the <code>googtrans</code> cookie, a clean switcher UI (current language label + hiding the active option), heading and breadcrumb (H1/H3) normalization before translation, and scoped <code>notranslate</code> rules for elements with manual text overrides. Added support for dynamic Elementor re-renders via <code>MutationObserver</code> and FAQ/accordion logic so translations apply correctly when content is expanded.</p>
@@ -87,18 +97,13 @@
 <p class="result"><b>Result:</b> Покращено індексацію та технічну структуру. / Improved indexing and technical structure.</p>
 </div>
 
-<div class="proj"><h3>Telegram Massage Bot</h3>
-<p><b>UA:</b> Telegram-бот для сервісу мобільного масажу. Три ролі (клієнт, майстер, адміністратор), оплата Monobank API, автоматичні повідомлення, логіка бронювання.</p>
-<p><b>EN:</b> Telegram bot for a mobile massage service. 3 user roles (client, master, admin), Monobank API payments, automated notifications, booking logic.</p>
-<p class="stack"><b>Stack:</b> Node.js, Telegraf, Monobank API, Google Cloud Run</p>
-<p class="result"><b>Result:</b> Автоматизовано прийом замовлень та оплату. / Automated order and payment workflow.</p>
-</div>
-
 <div class="proj"><h3>Steam Cosmetics Parser</h3>
-<p><b>UA:</b> Багатоджерельний парсер (Steam Market, Buff.163, DotaWiki, SteamInventory) з експортом у JSON і Google Sheets.</p>
-<p><b>EN:</b> Multi-source parser (Steam Market, Buff.163, DotaWiki, SteamInventory) exporting to JSON and Google Sheets.</p>
-<p class="stack"><b>Stack:</b> Node.js, Puppeteer, Google Sheets API</p>
-<p class="result"><b>Result:</b> Автоматизований збір і аналіз цін. / Automated multi-source price analysis.</p>
+<p><b>UA:</b> Самостійно реалізував парсер для збору, обробки й експорту даних зі Steam Market та суміжних джерел. Проєкт включав логіку обходу сторінок, збір інформації, обробку результатів, перевірку помилок, роботу з JSON і передачу даних у Google Sheets.</p>
+<p><b>UA:</b> У процесі працював із пагінацією, повторними спробами запитів, зміною User-Agent, обробкою обмежень запитів і збереженням прогресу, щоб парсер міг продовжувати роботу після зупинки.</p>
+<p><b>EN:</b> Independently built a parser for collecting, processing and exporting data from Steam Market and related sources. The project included pagination logic, data extraction, result processing, error handling, JSON output and export to Google Sheets.</p>
+<p><b>EN:</b> Worked with request retries, User-Agent rotation, request limits handling and progress saving so the parser could continue after interruption.</p>
+<p class="stack"><b>Stack:</b> JavaScript / Node.js environment, Puppeteer, Axios, JSON, Google Sheets API</p>
+<p class="result"><b>Result:</b> Автоматизований збір, перевірка й експорт даних для подальшого аналізу. / Automated data collection, validation and export for further analysis.</p>
 </div>
 
 <div class="proj"><h3>Deck-Building.us</h3>
@@ -248,93 +253,6 @@ function copyToSummarySheet(sheet, totalRow) {
          .setFontWeight("bold");
 }</pre>
 
-<p><b class="sub">Steam Market Scraper — pagination, UA rotation, 429 handling</b></p>
-<pre>ess(start) {
-  fs.writeFileSync(parserStateFile, JSON.stringify({ start }));
-  console.log(`✅ Прогрес збережено. Почнемо наступного разу з start=${start}`);
-}
-
-async function getAllMarketItems(onChunkSync) {
-  rotateUserAgent(); // Перший вибір User-Agent
-  const totalCountUrl = 'https://steamcommunity.com/market/search/render/?appid=570&amp;norender=1&amp;currency=1&amp;start=0&amp;count=1';
-  try {
-    const totalRes = await axios.get(totalCountUrl, {
-      headers: { 'User-Agent': currentUserAgent }
-    });
-    const total = totalRes.data.total_count || 0;
-    console.log(`🚀 Скрипт запущено. Всього айтемів на ринку: ${total}`);
-    fs.appendFileSync('parser_log.txt', `[${new Date().toISOString()}] Старт: ${total} айтемів на ринку\n`);
-  } catch (e) {
-    console.warn('⚠️ Не вдалося отримати загальну кількість айтемів.');
-  }
-
-  let start = 0;
-  const batchSize = 10;
-  const maxPerSession = pagesPerBlock * batchSize;
-  let processed = 0;
-  const masterItemsMap = new Map();
-  let emptyPageRetries = 0;
-
-  try {
-    if (!fs.existsSync(parserStateFile)) {
-      fs.writeFileSync(parserStateFile, JSON.stringify({ start: 0 }, null, 2));
-      console.log('🆕 parser-state.json не знайдено. Створено новий з start = 0.');
-    }
-
-    const state = JSON.parse(fs.readFileSync(parserStateFile, 'utf-8'));
-    start = state.start || 0;
-
-    currentStart = start;
-
-    while (true) {
-      console.log(`🔄 Парси</pre>
-
-<p><b class="sub">Price Monitor Job — watchlist + retry with UA rotate</b></p>
-<pre>ля ${market_hash_name}`);
-      return 'RETRY';
-    }
-    console.warn(`⚠️ Помилка запиту ціни для ${market_hash_name}: ${e.message}`);
-    return null;
-  }
-}
-
-async function processItem(item) {
-  let attempts = 0;
-  while (attempts &lt; 2) {
-    const price = await fetchPrice(item.market_hash_name);
-    if (price === 'RETRY') {
-      rotateUserAgent('бан');
-      console.log(`⏳ Пауза 60с через бан...`);
-      await sleep(60000);
-      attempts++;
-      continue;
-    }
-
-    if (price == null) return;
-
-    if (price !== item.price) {
-      console.log(`🔄 Зміна ціни: ${item.market_hash_name}: ${item.price} → ${price}`);
-      try {
-        await updateItemPriceInSheet(item.market_hash_name, price);
-      } catch (e) {
-        console.error(`❌ Помилка оновлення Google Sheets для ${item.market_hash_name}:`, e.message);
-      }
-      item.price = price;
-    } else {
-      console.log(`✅ Без змін: ${item.market_hash_name} — $${item.price}`);
-    }
-
-    break;
-  }
-}
-
-async function monitor() {
-  while (true) {
-    rotateUserAgent('початок циклу');
-    console.log(`⏱️ Старт моніторингу Steam Ma</pre>
-
-<p><b class="sub">Parsed Inventory — XML + Puppeteer fallback + backup</b></p>
-<pre>;
 
 const sleep = ms =&gt; new Promise(resolve =&gt; setTimeout(resolve, ms));
 const getRandomUA = () =&gt; USER_AGENTS[Math.floor(Math.random() * USER_AGENTS.length)];
@@ -436,7 +354,7 @@ if (menuToggle &amp;&amp; nav) {
 </pre>
 </section>
 
-<footer>© Yurii Yurchyk · Web &amp; Automation Developer</footer>
+<footer>© Yurii Yurchyk · Junior JavaScript / Frontend / Web Automation Developer</footer>
 </div>
 </body>
 </html>
